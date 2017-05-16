@@ -25,15 +25,15 @@ namespace ShrutiPieShop.Models
 
         public IEnumerable<Pie> PiesOfTheWeek
         {
-            //    get
-            //    {
-            //        return _appDbContext.Pies.Include(c => c.Category).Where(p => p.IsPieOfTheWeek);
-            //    }
+            get
+            {
+                return _appDbContext.Pies.Include(c => c.Category).Where(p => p.IsPieOfTheWeek);
             }
+        }
 
             public Pie GetPieById(int pieId)
             {
-            //    return _appDbContext.Pies.FirstOrDefault(p => p.PieId == pieId);
-            }
+            return _appDbContext.Pies.FirstOrDefault(p => p.PieId == pieId);
+        }
     }
 }

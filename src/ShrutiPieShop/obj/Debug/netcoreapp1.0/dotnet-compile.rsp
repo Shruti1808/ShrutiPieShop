@@ -205,8 +205,10 @@ C:\Users\Kunal\documents\visual studio 2015\Projects\ShrutiPieShop\src\ShrutiPie
 C:\Users\Kunal\documents\visual studio 2015\Projects\ShrutiPieShop\src\ShrutiPieShop\Controllers\PieController.cs
 C:\Users\Kunal\documents\visual studio 2015\Projects\ShrutiPieShop\src\ShrutiPieShop\Models\AppDbContext.cs
 C:\Users\Kunal\documents\visual studio 2015\Projects\ShrutiPieShop\src\ShrutiPieShop\Models\Category.cs
+C:\Users\Kunal\documents\visual studio 2015\Projects\ShrutiPieShop\src\ShrutiPieShop\Models\CategoryRepository.cs
 C:\Users\Kunal\documents\visual studio 2015\Projects\ShrutiPieShop\src\ShrutiPieShop\Models\ICategoryRepository.cs
 C:\Users\Kunal\documents\visual studio 2015\Projects\ShrutiPieShop\src\ShrutiPieShop\Models\IPieRepository.cs
 C:\Users\Kunal\documents\visual studio 2015\Projects\ShrutiPieShop\src\ShrutiPieShop\Models\MockCategoryRepository.cs
 C:\Users\Kunal\documents\visual studio 2015\Projects\ShrutiPieShop\src\ShrutiPieShop\Models\MockPieRepository.cs
 C:\Users\Kunal\documents\visual studio 2015\Projects\ShrutiPieShop\src\ShrutiPieShop\Models\Pie.cs
+C:\Users\Kunal\documents\visual studio 2015\Projects\ShrutiPieShop\src\ShrutiPieShop\Models\PieRepository.cs
