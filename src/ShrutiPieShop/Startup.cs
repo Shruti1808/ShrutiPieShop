@@ -7,7 +7,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using ShrutiPieShop.Models;
 using Microsoft.Extensions.Configuration;
+using Microsoft.EntityFrameworkCore;
 
 namespace ShrutiPieShop
 {
@@ -27,21 +29,43 @@ namespace ShrutiPieShop
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc();
+            services.AddMemoryCache();
+            services.AddSession();
+
+            //services.AddTransient<ICategoryRepository, CategoryRepository>();
+            //services.AddTransient<IPieRepository, PieRepository>();
+            //services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            //services.AddScoped<ShoppingCart>(sp => ShoppingCart.GetCart(sp));
+
+            //services.AddDbContext<AppDbContext>(options => options.UseSqlServer(_configurationRoot.GetConnectionString("DefaultConnection")));
         }
 
+        
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            loggerFactory.AddConsole();
 
-            if (env.IsDevelopment())
+            app.UseDeveloperExceptionPage();
+            app.UseStaticFiles();
+            app.UseStatusCodePages();
+            app.UseSession();
+            //app.UseMvcWithDefaultRoute();
+            app.UseMvc(routes =>
             {
-                app.UseDeveloperExceptionPage();
-            }
+                //routes.MapRoute(
+                //  name: "categoryfilter",
+                //  template: "Pie/{action}/{category?}",
+                //  defaults: new { Controller = "Pie", action = "List" });
 
-            app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync("Hello World!");
+                routes.MapRoute(
+                name: "default",
+                template: "{controller=Home}/{action=Index}/{id?}");
+
             });
+
+
+            //DbInitializer.Seed(app);
+
         }
     }
 }
