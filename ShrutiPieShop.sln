@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FC7815C5-E0BD-45BE-B880-7E7BFEEE2A23}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4E01FCE4-1449-4BA8-8122-DA2F6BF8F448}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ShrutiPieShop", "src\ShrutiPieShop\ShrutiPieShop.xproj", "{E30316C3-0CE6-4C10-8DC3-76425F3D15EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E30316C3-0CE6-4C10-8DC3-76425F3D15EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E30316C3-0CE6-4C10-8DC3-76425F3D15EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E30316C3-0CE6-4C10-8DC3-76425F3D15EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E30316C3-0CE6-4C10-8DC3-76425F3D15EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E30316C3-0CE6-4C10-8DC3-76425F3D15EF} = {FC7815C5-E0BD-45BE-B880-7E7BFEEE2A23}
+	EndGlobalSection
+EndGlobal
