@@ -5,7 +5,11 @@ using System.Threading.Tasks;
 
 namespace ShrutiPieShop.Models
 {
-    public class IPieRepository
+    public interface IPieRepository
     {
+        IEnumerable<Pie> Pies { get; }
+        IEnumerable<Pie> PiesOfTheWeek { get; }
+
+        Pie GetPieById(int pieId);
     }
 }
