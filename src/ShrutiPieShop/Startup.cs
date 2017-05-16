@@ -33,8 +33,8 @@ namespace ShrutiPieShop
             services.AddMemoryCache();
             services.AddSession();
 
-            //services.AddTransient<ICategoryRepository, CategoryRepository>();
-            //services.AddTransient<IPieRepository, PieRepository>();
+            services.AddTransient<ICategoryRepository, CategoryRepository>();
+            services.AddTransient<IPieRepository, PieRepository>();
             //services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             //services.AddScoped<ShoppingCart>(sp => ShoppingCart.GetCart(sp));
 
