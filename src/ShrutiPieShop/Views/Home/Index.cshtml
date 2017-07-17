@@ -1,1 +1,18 @@
-﻿
+﻿﻿@model HomePageViewModel
+
+@*//Using partial View to display Carousel*@
+
+@await Html.PartialAsync("Carousel")
+
+<h2>Pies of the week</h2>
+<h4>Our weekly selection - just for you!</h4>
+
+@*<div class="row">
+
+    @foreach (var pie in Model.PiesOfTheWeek)
+    {
+        // Using Partial View to display Pies of the Week
+        @Html.Partial("PieOfTheWeekSummary", pie)
+    }
+
+</div>*@

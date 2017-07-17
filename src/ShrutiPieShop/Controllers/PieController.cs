@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ShrutiPieShop.Models;
+using ShrutiPieShop.ViewModels;
 
 namespace ShrutiPieShop.Controllers
 {
@@ -21,7 +22,9 @@ namespace ShrutiPieShop.Controllers
         //Method to return a list of Pies
         public ViewResult List()
         {
-            return View(_pieRepository.Pies);
+            PiesListViewModel piesListViewModel = new PiesListViewModel();
+            piesListViewModel.Pies = _pieRepository.Pies;
+            return View(piesListViewModel);
         }
         //public IActionResult Index()
         //{

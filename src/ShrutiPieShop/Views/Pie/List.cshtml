@@ -1,5 +1,13 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@model ShrutiPieShop.ViewModels.PiesListViewModel
+
+@*@model  PiesListViewModel*@
+
+<h1>@Model.CurrentCategory</h1>
+@foreach (var pie in Model.Pies)
+{
+    <h2>@pie.Name</h2>
+    <h3>@pie.Price.ToString("c")</h3>
+    <h4>@pie.Category.CategoryName</h4>
+    @*@Html.Partial("PieOverViewSummary", pie)*@
 }
+

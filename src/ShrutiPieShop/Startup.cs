@@ -38,7 +38,7 @@ namespace ShrutiPieShop
             //services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             //services.AddScoped<ShoppingCart>(sp => ShoppingCart.GetCart(sp));
 
-            //services.AddDbContext<AppDbContext>(options => options.UseSqlServer(_configurationRoot.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(_configurationRoot.GetConnectionString("DefaultConnection")));
         }
 
         
