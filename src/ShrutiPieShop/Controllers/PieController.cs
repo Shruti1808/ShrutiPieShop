@@ -24,6 +24,7 @@ namespace ShrutiPieShop.Controllers
         {
             PiesListViewModel piesListViewModel = new PiesListViewModel();
             piesListViewModel.Pies = _pieRepository.Pies;
+            piesListViewModel.CurrentCategory = "Cheese cakes";
             return View(piesListViewModel);
         }
         //public IActionResult Index()
